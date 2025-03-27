@@ -4,6 +4,11 @@ let mongoose = require("mongoose");
 let cors = require("cors");
 const enquiryRouter = require("./App/routes/web/enquiryRoutes");
 
+
+app.get("/", (req, res) => {
+  res.send("HEllo from the server ");
+});
+
 let app = express();
 app.use(cors());
 app.use(express.json());
